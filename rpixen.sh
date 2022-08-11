@@ -199,7 +199,7 @@ MNTROOTFS=/mnt/dom0_rpi-arm64-rootfs/
 MNTBOOT=${MNTROOTFS}boot/
 IMGFILE=${MNTRAMDISK}rpixen.img
 
-ROOTFS=${VARIANT}-ubuntu-base-18.04.3-base-${BUILD_ARCH}-prepped.tar.gz
+ROOTFS=${VARIANT}-ubuntu-base-20.04.3-base-${BUILD_ARCH}-prepped.tar.gz
 if [ ! -s ${ROOTFS} ]; then
     ./ubuntu-base-prep.sh ${ROOTFS} ${MNTRAMDISK} ${BUILD_ARCH}  ${DNS_SERVER} ${PROXY_CFG} 
 fi
